@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ULA
-Sun Sep 09 22:51:10 2018
-Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Web Edition
+Sun Sep 09 23:50:52 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -22,7 +22,7 @@ Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Web Editio
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2012 Altera Corporation
+Copyright (C) 1991-2013 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,24 +38,24 @@ applicable agreement for further details.
 
 
 
-+------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                       ;
-+------------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 09 22:51:10 2018         ;
-; Quartus II 64-Bit Version          ; 12.1 Build 243 01/31/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; ULA                                           ;
-; Top-level Entity Name              ; ULA                                           ;
-; Family                             ; Cyclone II                                    ;
-; Total logic elements               ; 0                                             ;
-;     Total combinational functions  ; 0                                             ;
-;     Dedicated logic registers      ; 0                                             ;
-; Total registers                    ; 0                                             ;
-; Total pins                         ; 21                                            ;
-; Total virtual pins                 ; 0                                             ;
-; Total memory bits                  ; 0                                             ;
-; Embedded Multiplier 9-bit elements ; 0                                             ;
-; Total PLLs                         ; 0                                             ;
-+------------------------------------+-----------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Sep 09 23:50:52 2018           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; ULA                                             ;
+; Top-level Entity Name              ; ULA                                             ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 87                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -148,18 +148,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                               ;
-+----------------------------------+-----------------+-----------------+-------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path        ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------+---------+
-; ULA.vhd                          ; yes             ; User VHDL File  ; C:/Users/Wagner/Desktop/ULA/ULA.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                         ;
++----------------------------------+-----------------+-----------------+-------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path  ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------+---------+
+; ULA.vhd                          ; yes             ; User VHDL File  ; D:/GitHub/ULA-SDA/ULA/ULA.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -182,7 +182,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 21    ;
+; I/O pins                                    ; 87    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 +---------------------------------------------+-------+
 
@@ -192,7 +192,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |ULA                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |ULA                ;              ;
+; |ULA                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 87   ; 0            ; |ULA                ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -226,22 +226,53 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Sep 09 22:51:09 2018
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Sep 09 23:50:51 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
     Info (12022): Found design unit 1: ULA-ULA_ARQ
     Info (12023): Found entity 1: ULA
 Info (12127): Elaborating entity "ULA" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at ULA.vhd(22): signal "r_Mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ULA.vhd(23): signal "r_Mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ULA.vhd(24): signal "r_Mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ULA.vhd(25): signal "r_Mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (12158): Entity "ULA" contains only dangling pins
+Warning (10541): VHDL Signal Declaration warning at ULA.vhd(13): used implicit default value for signal "teste" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10492): VHDL Process Statement warning at ULA.vhd(26): signal "intest" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "teste[0]" is stuck at GND
+    Warning (13410): Pin "teste[1]" is stuck at GND
+    Warning (13410): Pin "teste[2]" is stuck at GND
+    Warning (13410): Pin "teste[3]" is stuck at GND
+    Warning (13410): Pin "teste[4]" is stuck at GND
+    Warning (13410): Pin "teste[5]" is stuck at GND
+    Warning (13410): Pin "teste[6]" is stuck at GND
+    Warning (13410): Pin "teste[7]" is stuck at GND
+    Warning (13410): Pin "teste[8]" is stuck at GND
+    Warning (13410): Pin "teste[9]" is stuck at GND
+    Warning (13410): Pin "teste[10]" is stuck at GND
+    Warning (13410): Pin "teste[11]" is stuck at GND
+    Warning (13410): Pin "teste[12]" is stuck at GND
+    Warning (13410): Pin "teste[13]" is stuck at GND
+    Warning (13410): Pin "teste[14]" is stuck at GND
+    Warning (13410): Pin "teste[15]" is stuck at GND
+    Warning (13410): Pin "teste[16]" is stuck at GND
+    Warning (13410): Pin "teste[17]" is stuck at GND
+    Warning (13410): Pin "teste[18]" is stuck at GND
+    Warning (13410): Pin "teste[19]" is stuck at GND
+    Warning (13410): Pin "teste[20]" is stuck at GND
+    Warning (13410): Pin "teste[21]" is stuck at GND
+    Warning (13410): Pin "teste[22]" is stuck at GND
+    Warning (13410): Pin "teste[23]" is stuck at GND
+    Warning (13410): Pin "teste[24]" is stuck at GND
+    Warning (13410): Pin "teste[25]" is stuck at GND
+    Warning (13410): Pin "teste[26]" is stuck at GND
+    Warning (13410): Pin "teste[27]" is stuck at GND
+    Warning (13410): Pin "teste[28]" is stuck at GND
+    Warning (13410): Pin "teste[29]" is stuck at GND
+    Warning (13410): Pin "teste[30]" is stuck at GND
+    Warning (13410): Pin "teste[31]" is stuck at GND
+    Warning (13410): Pin "teste[32]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 21 input pin(s) that do not drive logic
+Warning (21074): Design contains 54 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Rs[0]"
     Warning (15610): No output dependent on input pin "Rs[1]"
     Warning (15610): No output dependent on input pin "Rs[2]"
@@ -263,12 +294,45 @@ Warning (21074): Design contains 21 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "FUNCT[3]"
     Warning (15610): No output dependent on input pin "FUNCT[4]"
     Warning (15610): No output dependent on input pin "FUNCT[5]"
-Info (21057): Implemented 21 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 21 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 28 warnings
-    Info: Peak virtual memory: 4651 megabytes
-    Info: Processing ended: Sun Sep 09 22:51:10 2018
+    Warning (15610): No output dependent on input pin "intest[0]"
+    Warning (15610): No output dependent on input pin "intest[1]"
+    Warning (15610): No output dependent on input pin "intest[2]"
+    Warning (15610): No output dependent on input pin "intest[3]"
+    Warning (15610): No output dependent on input pin "intest[4]"
+    Warning (15610): No output dependent on input pin "intest[5]"
+    Warning (15610): No output dependent on input pin "intest[6]"
+    Warning (15610): No output dependent on input pin "intest[7]"
+    Warning (15610): No output dependent on input pin "intest[8]"
+    Warning (15610): No output dependent on input pin "intest[9]"
+    Warning (15610): No output dependent on input pin "intest[10]"
+    Warning (15610): No output dependent on input pin "intest[11]"
+    Warning (15610): No output dependent on input pin "intest[12]"
+    Warning (15610): No output dependent on input pin "intest[13]"
+    Warning (15610): No output dependent on input pin "intest[14]"
+    Warning (15610): No output dependent on input pin "intest[15]"
+    Warning (15610): No output dependent on input pin "intest[16]"
+    Warning (15610): No output dependent on input pin "intest[17]"
+    Warning (15610): No output dependent on input pin "intest[18]"
+    Warning (15610): No output dependent on input pin "intest[19]"
+    Warning (15610): No output dependent on input pin "intest[20]"
+    Warning (15610): No output dependent on input pin "intest[21]"
+    Warning (15610): No output dependent on input pin "intest[22]"
+    Warning (15610): No output dependent on input pin "intest[23]"
+    Warning (15610): No output dependent on input pin "intest[24]"
+    Warning (15610): No output dependent on input pin "intest[25]"
+    Warning (15610): No output dependent on input pin "intest[26]"
+    Warning (15610): No output dependent on input pin "intest[27]"
+    Warning (15610): No output dependent on input pin "intest[28]"
+    Warning (15610): No output dependent on input pin "intest[29]"
+    Warning (15610): No output dependent on input pin "intest[30]"
+    Warning (15610): No output dependent on input pin "intest[31]"
+    Warning (15610): No output dependent on input pin "intest[32]"
+Info (21057): Implemented 87 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 54 input pins
+    Info (21059): Implemented 33 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 92 warnings
+    Info: Peak virtual memory: 4654 megabytes
+    Info: Processing ended: Sun Sep 09 23:50:52 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
