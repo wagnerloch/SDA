@@ -1,0 +1,1630 @@
+|Carry_Select32bits
+a[0] => Carry_Select4bits:Carry_Select_Block1.a[0]
+a[1] => Carry_Select4bits:Carry_Select_Block1.a[1]
+a[2] => Carry_Select4bits:Carry_Select_Block1.a[2]
+a[3] => Carry_Select4bits:Carry_Select_Block1.a[3]
+a[4] => Carry_Select4bits:G1:2:Carry_Select_Block.a[0]
+a[5] => Carry_Select4bits:G1:2:Carry_Select_Block.a[1]
+a[6] => Carry_Select4bits:G1:2:Carry_Select_Block.a[2]
+a[7] => Carry_Select4bits:G1:2:Carry_Select_Block.a[3]
+a[8] => Carry_Select4bits:G1:3:Carry_Select_Block.a[0]
+a[9] => Carry_Select4bits:G1:3:Carry_Select_Block.a[1]
+a[10] => Carry_Select4bits:G1:3:Carry_Select_Block.a[2]
+a[11] => Carry_Select4bits:G1:3:Carry_Select_Block.a[3]
+a[12] => Carry_Select4bits:G1:4:Carry_Select_Block.a[0]
+a[13] => Carry_Select4bits:G1:4:Carry_Select_Block.a[1]
+a[14] => Carry_Select4bits:G1:4:Carry_Select_Block.a[2]
+a[15] => Carry_Select4bits:G1:4:Carry_Select_Block.a[3]
+a[16] => Carry_Select4bits:G1:5:Carry_Select_Block.a[0]
+a[17] => Carry_Select4bits:G1:5:Carry_Select_Block.a[1]
+a[18] => Carry_Select4bits:G1:5:Carry_Select_Block.a[2]
+a[19] => Carry_Select4bits:G1:5:Carry_Select_Block.a[3]
+a[20] => Carry_Select4bits:G1:6:Carry_Select_Block.a[0]
+a[21] => Carry_Select4bits:G1:6:Carry_Select_Block.a[1]
+a[22] => Carry_Select4bits:G1:6:Carry_Select_Block.a[2]
+a[23] => Carry_Select4bits:G1:6:Carry_Select_Block.a[3]
+a[24] => Carry_Select4bits:G1:7:Carry_Select_Block.a[0]
+a[25] => Carry_Select4bits:G1:7:Carry_Select_Block.a[1]
+a[26] => Carry_Select4bits:G1:7:Carry_Select_Block.a[2]
+a[27] => Carry_Select4bits:G1:7:Carry_Select_Block.a[3]
+a[28] => Carry_Select4bits:G1:8:Carry_Select_Block.a[0]
+a[29] => Carry_Select4bits:G1:8:Carry_Select_Block.a[1]
+a[30] => Carry_Select4bits:G1:8:Carry_Select_Block.a[2]
+a[31] => Carry_Select4bits:G1:8:Carry_Select_Block.a[3]
+b[0] => Carry_Select4bits:Carry_Select_Block1.b[0]
+b[1] => Carry_Select4bits:Carry_Select_Block1.b[1]
+b[2] => Carry_Select4bits:Carry_Select_Block1.b[2]
+b[3] => Carry_Select4bits:Carry_Select_Block1.b[3]
+b[4] => Carry_Select4bits:G1:2:Carry_Select_Block.b[0]
+b[5] => Carry_Select4bits:G1:2:Carry_Select_Block.b[1]
+b[6] => Carry_Select4bits:G1:2:Carry_Select_Block.b[2]
+b[7] => Carry_Select4bits:G1:2:Carry_Select_Block.b[3]
+b[8] => Carry_Select4bits:G1:3:Carry_Select_Block.b[0]
+b[9] => Carry_Select4bits:G1:3:Carry_Select_Block.b[1]
+b[10] => Carry_Select4bits:G1:3:Carry_Select_Block.b[2]
+b[11] => Carry_Select4bits:G1:3:Carry_Select_Block.b[3]
+b[12] => Carry_Select4bits:G1:4:Carry_Select_Block.b[0]
+b[13] => Carry_Select4bits:G1:4:Carry_Select_Block.b[1]
+b[14] => Carry_Select4bits:G1:4:Carry_Select_Block.b[2]
+b[15] => Carry_Select4bits:G1:4:Carry_Select_Block.b[3]
+b[16] => Carry_Select4bits:G1:5:Carry_Select_Block.b[0]
+b[17] => Carry_Select4bits:G1:5:Carry_Select_Block.b[1]
+b[18] => Carry_Select4bits:G1:5:Carry_Select_Block.b[2]
+b[19] => Carry_Select4bits:G1:5:Carry_Select_Block.b[3]
+b[20] => Carry_Select4bits:G1:6:Carry_Select_Block.b[0]
+b[21] => Carry_Select4bits:G1:6:Carry_Select_Block.b[1]
+b[22] => Carry_Select4bits:G1:6:Carry_Select_Block.b[2]
+b[23] => Carry_Select4bits:G1:6:Carry_Select_Block.b[3]
+b[24] => Carry_Select4bits:G1:7:Carry_Select_Block.b[0]
+b[25] => Carry_Select4bits:G1:7:Carry_Select_Block.b[1]
+b[26] => Carry_Select4bits:G1:7:Carry_Select_Block.b[2]
+b[27] => Carry_Select4bits:G1:7:Carry_Select_Block.b[3]
+b[28] => Carry_Select4bits:G1:8:Carry_Select_Block.b[0]
+b[29] => Carry_Select4bits:G1:8:Carry_Select_Block.b[1]
+b[30] => Carry_Select4bits:G1:8:Carry_Select_Block.b[2]
+b[31] => Carry_Select4bits:G1:8:Carry_Select_Block.b[3]
+cin => Carry_Select4bits:Carry_Select_Block1.cin
+saida[0] <= Carry_Select4bits:Carry_Select_Block1.saida[0]
+saida[1] <= Carry_Select4bits:Carry_Select_Block1.saida[1]
+saida[2] <= Carry_Select4bits:Carry_Select_Block1.saida[2]
+saida[3] <= Carry_Select4bits:Carry_Select_Block1.saida[3]
+saida[4] <= Carry_Select4bits:G1:2:Carry_Select_Block.saida[0]
+saida[5] <= Carry_Select4bits:G1:2:Carry_Select_Block.saida[1]
+saida[6] <= Carry_Select4bits:G1:2:Carry_Select_Block.saida[2]
+saida[7] <= Carry_Select4bits:G1:2:Carry_Select_Block.saida[3]
+saida[8] <= Carry_Select4bits:G1:3:Carry_Select_Block.saida[0]
+saida[9] <= Carry_Select4bits:G1:3:Carry_Select_Block.saida[1]
+saida[10] <= Carry_Select4bits:G1:3:Carry_Select_Block.saida[2]
+saida[11] <= Carry_Select4bits:G1:3:Carry_Select_Block.saida[3]
+saida[12] <= Carry_Select4bits:G1:4:Carry_Select_Block.saida[0]
+saida[13] <= Carry_Select4bits:G1:4:Carry_Select_Block.saida[1]
+saida[14] <= Carry_Select4bits:G1:4:Carry_Select_Block.saida[2]
+saida[15] <= Carry_Select4bits:G1:4:Carry_Select_Block.saida[3]
+saida[16] <= Carry_Select4bits:G1:5:Carry_Select_Block.saida[0]
+saida[17] <= Carry_Select4bits:G1:5:Carry_Select_Block.saida[1]
+saida[18] <= Carry_Select4bits:G1:5:Carry_Select_Block.saida[2]
+saida[19] <= Carry_Select4bits:G1:5:Carry_Select_Block.saida[3]
+saida[20] <= Carry_Select4bits:G1:6:Carry_Select_Block.saida[0]
+saida[21] <= Carry_Select4bits:G1:6:Carry_Select_Block.saida[1]
+saida[22] <= Carry_Select4bits:G1:6:Carry_Select_Block.saida[2]
+saida[23] <= Carry_Select4bits:G1:6:Carry_Select_Block.saida[3]
+saida[24] <= Carry_Select4bits:G1:7:Carry_Select_Block.saida[0]
+saida[25] <= Carry_Select4bits:G1:7:Carry_Select_Block.saida[1]
+saida[26] <= Carry_Select4bits:G1:7:Carry_Select_Block.saida[2]
+saida[27] <= Carry_Select4bits:G1:7:Carry_Select_Block.saida[3]
+saida[28] <= Carry_Select4bits:G1:8:Carry_Select_Block.saida[0]
+saida[29] <= Carry_Select4bits:G1:8:Carry_Select_Block.saida[1]
+saida[30] <= Carry_Select4bits:G1:8:Carry_Select_Block.saida[2]
+saida[31] <= Carry_Select4bits:G1:8:Carry_Select_Block.saida[3]
+cout0 <= Carry_Select4bits:G1:8:Carry_Select_Block.cout0
+cout1 <= Carry_Select4bits:G1:8:Carry_Select_Block.cout1
+
+
+|Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1
+a[0] => Adder4bits:Carry_Select_Adder0.a[0]
+a[0] => Adder4bits:Carry_Select_Adder1.a[0]
+a[1] => Adder4bits:Carry_Select_Adder0.a[1]
+a[1] => Adder4bits:Carry_Select_Adder1.a[1]
+a[2] => Adder4bits:Carry_Select_Adder0.a[2]
+a[2] => Adder4bits:Carry_Select_Adder1.a[2]
+a[3] => Adder4bits:Carry_Select_Adder0.a[3]
+a[3] => Adder4bits:Carry_Select_Adder1.a[3]
+b[0] => Adder4bits:Carry_Select_Adder0.b[0]
+b[0] => Adder4bits:Carry_Select_Adder1.b[0]
+b[1] => Adder4bits:Carry_Select_Adder0.b[1]
+b[1] => Adder4bits:Carry_Select_Adder1.b[1]
+b[2] => Adder4bits:Carry_Select_Adder0.b[2]
+b[2] => Adder4bits:Carry_Select_Adder1.b[2]
+b[3] => Adder4bits:Carry_Select_Adder0.b[3]
+b[3] => Adder4bits:Carry_Select_Adder1.b[3]
+cin => Mux8x4:Carry_Select_Mux.sel
+saida[0] <= Mux8x4:Carry_Select_Mux.saida[0]
+saida[1] <= Mux8x4:Carry_Select_Mux.saida[1]
+saida[2] <= Mux8x4:Carry_Select_Mux.saida[2]
+saida[3] <= Mux8x4:Carry_Select_Mux.saida[3]
+cout0 <= Adder4bits:Carry_Select_Adder0.cout
+cout1 <= Adder4bits:Carry_Select_Adder1.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder0
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder0|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder1
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder1|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder1|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Mux8x4:Carry_Select_Mux
+in0[0] => saida.DATAB
+in0[1] => saida.DATAB
+in0[2] => saida.DATAB
+in0[3] => saida.DATAB
+in1[0] => saida.DATAA
+in1[1] => saida.DATAA
+in1[2] => saida.DATAA
+in1[3] => saida.DATAA
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block
+a[0] => Adder4bits:Carry_Select_Adder0.a[0]
+a[0] => Adder4bits:Carry_Select_Adder1.a[0]
+a[1] => Adder4bits:Carry_Select_Adder0.a[1]
+a[1] => Adder4bits:Carry_Select_Adder1.a[1]
+a[2] => Adder4bits:Carry_Select_Adder0.a[2]
+a[2] => Adder4bits:Carry_Select_Adder1.a[2]
+a[3] => Adder4bits:Carry_Select_Adder0.a[3]
+a[3] => Adder4bits:Carry_Select_Adder1.a[3]
+b[0] => Adder4bits:Carry_Select_Adder0.b[0]
+b[0] => Adder4bits:Carry_Select_Adder1.b[0]
+b[1] => Adder4bits:Carry_Select_Adder0.b[1]
+b[1] => Adder4bits:Carry_Select_Adder1.b[1]
+b[2] => Adder4bits:Carry_Select_Adder0.b[2]
+b[2] => Adder4bits:Carry_Select_Adder1.b[2]
+b[3] => Adder4bits:Carry_Select_Adder0.b[3]
+b[3] => Adder4bits:Carry_Select_Adder1.b[3]
+cin => Mux8x4:Carry_Select_Mux.sel
+saida[0] <= Mux8x4:Carry_Select_Mux.saida[0]
+saida[1] <= Mux8x4:Carry_Select_Mux.saida[1]
+saida[2] <= Mux8x4:Carry_Select_Mux.saida[2]
+saida[3] <= Mux8x4:Carry_Select_Mux.saida[3]
+cout0 <= Adder4bits:Carry_Select_Adder0.cout
+cout1 <= Adder4bits:Carry_Select_Adder1.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder0
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder1
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Mux8x4:Carry_Select_Mux
+in0[0] => saida.DATAB
+in0[1] => saida.DATAB
+in0[2] => saida.DATAB
+in0[3] => saida.DATAB
+in1[0] => saida.DATAA
+in1[1] => saida.DATAA
+in1[2] => saida.DATAA
+in1[3] => saida.DATAA
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block
+a[0] => Adder4bits:Carry_Select_Adder0.a[0]
+a[0] => Adder4bits:Carry_Select_Adder1.a[0]
+a[1] => Adder4bits:Carry_Select_Adder0.a[1]
+a[1] => Adder4bits:Carry_Select_Adder1.a[1]
+a[2] => Adder4bits:Carry_Select_Adder0.a[2]
+a[2] => Adder4bits:Carry_Select_Adder1.a[2]
+a[3] => Adder4bits:Carry_Select_Adder0.a[3]
+a[3] => Adder4bits:Carry_Select_Adder1.a[3]
+b[0] => Adder4bits:Carry_Select_Adder0.b[0]
+b[0] => Adder4bits:Carry_Select_Adder1.b[0]
+b[1] => Adder4bits:Carry_Select_Adder0.b[1]
+b[1] => Adder4bits:Carry_Select_Adder1.b[1]
+b[2] => Adder4bits:Carry_Select_Adder0.b[2]
+b[2] => Adder4bits:Carry_Select_Adder1.b[2]
+b[3] => Adder4bits:Carry_Select_Adder0.b[3]
+b[3] => Adder4bits:Carry_Select_Adder1.b[3]
+cin => Mux8x4:Carry_Select_Mux.sel
+saida[0] <= Mux8x4:Carry_Select_Mux.saida[0]
+saida[1] <= Mux8x4:Carry_Select_Mux.saida[1]
+saida[2] <= Mux8x4:Carry_Select_Mux.saida[2]
+saida[3] <= Mux8x4:Carry_Select_Mux.saida[3]
+cout0 <= Adder4bits:Carry_Select_Adder0.cout
+cout1 <= Adder4bits:Carry_Select_Adder1.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder0
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder1
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Mux8x4:Carry_Select_Mux
+in0[0] => saida.DATAB
+in0[1] => saida.DATAB
+in0[2] => saida.DATAB
+in0[3] => saida.DATAB
+in1[0] => saida.DATAA
+in1[1] => saida.DATAA
+in1[2] => saida.DATAA
+in1[3] => saida.DATAA
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block
+a[0] => Adder4bits:Carry_Select_Adder0.a[0]
+a[0] => Adder4bits:Carry_Select_Adder1.a[0]
+a[1] => Adder4bits:Carry_Select_Adder0.a[1]
+a[1] => Adder4bits:Carry_Select_Adder1.a[1]
+a[2] => Adder4bits:Carry_Select_Adder0.a[2]
+a[2] => Adder4bits:Carry_Select_Adder1.a[2]
+a[3] => Adder4bits:Carry_Select_Adder0.a[3]
+a[3] => Adder4bits:Carry_Select_Adder1.a[3]
+b[0] => Adder4bits:Carry_Select_Adder0.b[0]
+b[0] => Adder4bits:Carry_Select_Adder1.b[0]
+b[1] => Adder4bits:Carry_Select_Adder0.b[1]
+b[1] => Adder4bits:Carry_Select_Adder1.b[1]
+b[2] => Adder4bits:Carry_Select_Adder0.b[2]
+b[2] => Adder4bits:Carry_Select_Adder1.b[2]
+b[3] => Adder4bits:Carry_Select_Adder0.b[3]
+b[3] => Adder4bits:Carry_Select_Adder1.b[3]
+cin => Mux8x4:Carry_Select_Mux.sel
+saida[0] <= Mux8x4:Carry_Select_Mux.saida[0]
+saida[1] <= Mux8x4:Carry_Select_Mux.saida[1]
+saida[2] <= Mux8x4:Carry_Select_Mux.saida[2]
+saida[3] <= Mux8x4:Carry_Select_Mux.saida[3]
+cout0 <= Adder4bits:Carry_Select_Adder0.cout
+cout1 <= Adder4bits:Carry_Select_Adder1.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder0
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder1
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Mux8x4:Carry_Select_Mux
+in0[0] => saida.DATAB
+in0[1] => saida.DATAB
+in0[2] => saida.DATAB
+in0[3] => saida.DATAB
+in1[0] => saida.DATAA
+in1[1] => saida.DATAA
+in1[2] => saida.DATAA
+in1[3] => saida.DATAA
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block
+a[0] => Adder4bits:Carry_Select_Adder0.a[0]
+a[0] => Adder4bits:Carry_Select_Adder1.a[0]
+a[1] => Adder4bits:Carry_Select_Adder0.a[1]
+a[1] => Adder4bits:Carry_Select_Adder1.a[1]
+a[2] => Adder4bits:Carry_Select_Adder0.a[2]
+a[2] => Adder4bits:Carry_Select_Adder1.a[2]
+a[3] => Adder4bits:Carry_Select_Adder0.a[3]
+a[3] => Adder4bits:Carry_Select_Adder1.a[3]
+b[0] => Adder4bits:Carry_Select_Adder0.b[0]
+b[0] => Adder4bits:Carry_Select_Adder1.b[0]
+b[1] => Adder4bits:Carry_Select_Adder0.b[1]
+b[1] => Adder4bits:Carry_Select_Adder1.b[1]
+b[2] => Adder4bits:Carry_Select_Adder0.b[2]
+b[2] => Adder4bits:Carry_Select_Adder1.b[2]
+b[3] => Adder4bits:Carry_Select_Adder0.b[3]
+b[3] => Adder4bits:Carry_Select_Adder1.b[3]
+cin => Mux8x4:Carry_Select_Mux.sel
+saida[0] <= Mux8x4:Carry_Select_Mux.saida[0]
+saida[1] <= Mux8x4:Carry_Select_Mux.saida[1]
+saida[2] <= Mux8x4:Carry_Select_Mux.saida[2]
+saida[3] <= Mux8x4:Carry_Select_Mux.saida[3]
+cout0 <= Adder4bits:Carry_Select_Adder0.cout
+cout1 <= Adder4bits:Carry_Select_Adder1.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder0
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder1
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Mux8x4:Carry_Select_Mux
+in0[0] => saida.DATAB
+in0[1] => saida.DATAB
+in0[2] => saida.DATAB
+in0[3] => saida.DATAB
+in1[0] => saida.DATAA
+in1[1] => saida.DATAA
+in1[2] => saida.DATAA
+in1[3] => saida.DATAA
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block
+a[0] => Adder4bits:Carry_Select_Adder0.a[0]
+a[0] => Adder4bits:Carry_Select_Adder1.a[0]
+a[1] => Adder4bits:Carry_Select_Adder0.a[1]
+a[1] => Adder4bits:Carry_Select_Adder1.a[1]
+a[2] => Adder4bits:Carry_Select_Adder0.a[2]
+a[2] => Adder4bits:Carry_Select_Adder1.a[2]
+a[3] => Adder4bits:Carry_Select_Adder0.a[3]
+a[3] => Adder4bits:Carry_Select_Adder1.a[3]
+b[0] => Adder4bits:Carry_Select_Adder0.b[0]
+b[0] => Adder4bits:Carry_Select_Adder1.b[0]
+b[1] => Adder4bits:Carry_Select_Adder0.b[1]
+b[1] => Adder4bits:Carry_Select_Adder1.b[1]
+b[2] => Adder4bits:Carry_Select_Adder0.b[2]
+b[2] => Adder4bits:Carry_Select_Adder1.b[2]
+b[3] => Adder4bits:Carry_Select_Adder0.b[3]
+b[3] => Adder4bits:Carry_Select_Adder1.b[3]
+cin => Mux8x4:Carry_Select_Mux.sel
+saida[0] <= Mux8x4:Carry_Select_Mux.saida[0]
+saida[1] <= Mux8x4:Carry_Select_Mux.saida[1]
+saida[2] <= Mux8x4:Carry_Select_Mux.saida[2]
+saida[3] <= Mux8x4:Carry_Select_Mux.saida[3]
+cout0 <= Adder4bits:Carry_Select_Adder0.cout
+cout1 <= Adder4bits:Carry_Select_Adder1.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder0
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder1
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Mux8x4:Carry_Select_Mux
+in0[0] => saida.DATAB
+in0[1] => saida.DATAB
+in0[2] => saida.DATAB
+in0[3] => saida.DATAB
+in1[0] => saida.DATAA
+in1[1] => saida.DATAA
+in1[2] => saida.DATAA
+in1[3] => saida.DATAA
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block
+a[0] => Adder4bits:Carry_Select_Adder0.a[0]
+a[0] => Adder4bits:Carry_Select_Adder1.a[0]
+a[1] => Adder4bits:Carry_Select_Adder0.a[1]
+a[1] => Adder4bits:Carry_Select_Adder1.a[1]
+a[2] => Adder4bits:Carry_Select_Adder0.a[2]
+a[2] => Adder4bits:Carry_Select_Adder1.a[2]
+a[3] => Adder4bits:Carry_Select_Adder0.a[3]
+a[3] => Adder4bits:Carry_Select_Adder1.a[3]
+b[0] => Adder4bits:Carry_Select_Adder0.b[0]
+b[0] => Adder4bits:Carry_Select_Adder1.b[0]
+b[1] => Adder4bits:Carry_Select_Adder0.b[1]
+b[1] => Adder4bits:Carry_Select_Adder1.b[1]
+b[2] => Adder4bits:Carry_Select_Adder0.b[2]
+b[2] => Adder4bits:Carry_Select_Adder1.b[2]
+b[3] => Adder4bits:Carry_Select_Adder0.b[3]
+b[3] => Adder4bits:Carry_Select_Adder1.b[3]
+cin => Mux8x4:Carry_Select_Mux.sel
+saida[0] <= Mux8x4:Carry_Select_Mux.saida[0]
+saida[1] <= Mux8x4:Carry_Select_Mux.saida[1]
+saida[2] <= Mux8x4:Carry_Select_Mux.saida[2]
+saida[3] <= Mux8x4:Carry_Select_Mux.saida[3]
+cout0 <= Adder4bits:Carry_Select_Adder0.cout
+cout1 <= Adder4bits:Carry_Select_Adder1.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder0
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder1
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Mux8x4:Carry_Select_Mux
+in0[0] => saida.DATAB
+in0[1] => saida.DATAB
+in0[2] => saida.DATAB
+in0[3] => saida.DATAB
+in1[0] => saida.DATAA
+in1[1] => saida.DATAA
+in1[2] => saida.DATAA
+in1[3] => saida.DATAA
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block
+a[0] => Adder4bits:Carry_Select_Adder0.a[0]
+a[0] => Adder4bits:Carry_Select_Adder1.a[0]
+a[1] => Adder4bits:Carry_Select_Adder0.a[1]
+a[1] => Adder4bits:Carry_Select_Adder1.a[1]
+a[2] => Adder4bits:Carry_Select_Adder0.a[2]
+a[2] => Adder4bits:Carry_Select_Adder1.a[2]
+a[3] => Adder4bits:Carry_Select_Adder0.a[3]
+a[3] => Adder4bits:Carry_Select_Adder1.a[3]
+b[0] => Adder4bits:Carry_Select_Adder0.b[0]
+b[0] => Adder4bits:Carry_Select_Adder1.b[0]
+b[1] => Adder4bits:Carry_Select_Adder0.b[1]
+b[1] => Adder4bits:Carry_Select_Adder1.b[1]
+b[2] => Adder4bits:Carry_Select_Adder0.b[2]
+b[2] => Adder4bits:Carry_Select_Adder1.b[2]
+b[3] => Adder4bits:Carry_Select_Adder0.b[3]
+b[3] => Adder4bits:Carry_Select_Adder1.b[3]
+cin => Mux8x4:Carry_Select_Mux.sel
+saida[0] <= Mux8x4:Carry_Select_Mux.saida[0]
+saida[1] <= Mux8x4:Carry_Select_Mux.saida[1]
+saida[2] <= Mux8x4:Carry_Select_Mux.saida[2]
+saida[3] <= Mux8x4:Carry_Select_Mux.saida[3]
+cout0 <= Adder4bits:Carry_Select_Adder0.cout
+cout1 <= Adder4bits:Carry_Select_Adder1.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder0
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder1
+a[0] => Adder1bit:SC0.a
+a[1] => Adder1bit:SC1.a
+a[2] => Adder1bit:SC2.a
+a[3] => Adder1bit:SC3.a
+b[0] => Adder1bit:SC0.b
+b[1] => Adder1bit:SC1.b
+b[2] => Adder1bit:SC2.b
+b[3] => Adder1bit:SC3.b
+cin => Adder1bit:SC0.cin
+saida[0] <= Adder1bit:SC0.saida
+saida[1] <= Adder1bit:SC1.saida
+saida[2] <= Adder1bit:SC2.saida
+saida[3] <= Adder1bit:SC3.saida
+cout <= Adder1bit:SC3.cout
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC0
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC3
+cin => saida.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => saida.IN0
+a => cout.IN0
+a => cout.IN1
+b => saida.IN1
+b => cout.IN1
+b => cout.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Mux8x4:Carry_Select_Mux
+in0[0] => saida.DATAB
+in0[1] => saida.DATAB
+in0[2] => saida.DATAB
+in0[3] => saida.DATAB
+in1[0] => saida.DATAA
+in1[1] => saida.DATAA
+in1[2] => saida.DATAA
+in1[3] => saida.DATAA
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+

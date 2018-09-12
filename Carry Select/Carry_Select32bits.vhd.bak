@@ -1,0 +1,36 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+ENTITY Carry_Select32bits IS
+	PORT (
+		a, b			: in	std_logic_vector (31 downto 0);
+		cin				: in	std_logic;
+		saida			: out	std_logic_vector (31 downto 0);
+		cout0, cout1	: out	std_logic
+		);
+END Carry_Select32bits;
+
+ARCHITECTURE Arq_Carry_Select32bits OF Carry_Select32bits IS
+
+	signal s_carry0, s_carry1: std_logic_vector (8 downto 0);
+
+	component Carry_Select4bits
+		PORT (
+			a, b			: in	std_logic_vector (3 downto 0);
+			cin				: in	std_logic;
+			saida			: out	std_logic_vector (3 downto 0);
+			cout0, cout1	: out	std_logic
+		);
+	end component;
+
+BEGIN
+	
+	Carry_Select_Block1: Carry_Select4bits
+			PORT MAP(a => a(3 downto 0), b => b(3 downto 0), cin => cin, saida => saida(3 downto 0),
+			cout0 => s_carry0(1), cout1 => s_carry1(1));
+	FOR i IN 2 TO 8 GENERATE
+		Carry_Select_Block: Carry_Select4bits
+			PORT MAP(a => a((i*4)-1 downto ((i*4)-4), b => b((i*4)-1 downto ((i*4)-4), 
+			cin => s_carry0(i-1) OR (s_carry1(i-1) AND s_carry1(i-2)), cout0 => s_carry0(i), cout1 => s_carry1(i));
+
+END Arq_Carry_Select32bits;
