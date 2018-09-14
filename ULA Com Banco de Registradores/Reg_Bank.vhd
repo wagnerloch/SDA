@@ -1,17 +1,16 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
 USE ieee.numeric_std.all;
 
 ENTITY Reg_Bank IS
 	PORT (
 		clk			: in 	std_logic;
 		reset			: in 	std_logic;
-		dadoEntrada	: in 	std_logic_vector (31 downto 0);
 		regDestino	: in 	std_logic_vector (4 downto 0);
 		regFonte1	: in 	std_logic_vector (4 downto 0);
 		regFonte2	: in 	std_logic_vector (4 downto 0);
-		dadoSaida1	: out std_logic_vector (31 downto 0);
-		dadoSaida2	: out std_logic_vector (31 downto 0)
+		FUNCT			: in std_logic_vector (5 downto 0) --Função ULA
 	);
 END Reg_Bank;
 
@@ -32,6 +31,9 @@ ARCHITECTURE comportamento OF Reg_Bank IS
 	type saidas_type	is array (0 to 31) of std_logic_vector(31 downto 0);
 	signal saidas		: saidas_type;
 	signal enable		: std_logic_vector (31 downto 0);
+	signal dadoEntrada: std_logic_vector (31 downto 0);
+	signal dadoSaida1 : std_logic_vector (31 downto 0);
+	signal dadoSaida2 : std_logic_vector (31 downto 0);
 	
 	BEGIN
 	
@@ -56,4 +58,13 @@ ARCHITECTURE comportamento OF Reg_Bank IS
 					saida		=> saidas(i)
 				);
 		END generate GEN_REG;
+				
+		WITH FUNCT SELECT
+			dadoEntrada <= 	dadoSaida1 + dadoSaida2 WHEN "000000",
+									dadoSaida1 - dadoSaida2 WHEN "000001",
+									(dadoSaida1 and dadoSaida2) or not(dadoSaida1) WHEN "000010",
+									dadoSaida1 and dadoSaida2 WHEN "000011",
+									dadoSaida1 or dadoSaida2 WHEN "000100",
+									not(dadoSaida1) WHEN "000101",
+									dadoSaida1 WHEN OTHERS;
 END comportamento;
