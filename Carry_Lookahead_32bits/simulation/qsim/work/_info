@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Wagner\Desktop\Carry_Lookahead_32bits\simulation\qsim
+vCarry_Lookahead_32bits
+Z1 !s100 Ka`_EbLBnG;jboO`;9PUE0
+Z2 IBiFN0868FHFlZOS[A11iG2
+Z3 VakYZ?Z>F@YVPYlA:KQN<@1
+Z4 dC:\Users\Wagner\Desktop\Carry_Lookahead_32bits\simulation\qsim
+Z5 w1537469282
+Z6 8Carry_Lookahead_32bits.vo
+Z7 FCarry_Lookahead_32bits.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Carry_Lookahead_32bits.vo|
+Z10 o-work work -O0
+Z11 n@carry_@lookahead_32bits
+!i10b 1
+!s85 0
+Z12 !s108 1537469284.478000
+Z13 !s107 Carry_Lookahead_32bits.vo|
+!s101 -O0
+vCarry_Lookahead_32bits_vlg_check_tst
+!i10b 1
+Z14 !s100 GA8Gi;OQ>HNOAoe]:`iem0
+Z15 I0VWgA^EYni_02l6<dk?]X2
+Z16 VcO_RmR@J^_KS5km5_5ENQ0
+R4
+R5
+Z17 8Carry_Lookahead_32bits.vt
+Z18 FCarry_Lookahead_32bits.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z19 !s108 1537469284.840000
+Z20 !s107 Carry_Lookahead_32bits.vt|
+Z21 !s90 -work|work|Carry_Lookahead_32bits.vt|
+!s101 -O0
+R10
+Z22 n@carry_@lookahead_32bits_vlg_check_tst
+vCarry_Lookahead_32bits_vlg_sample_tst
+!i10b 1
+Z23 !s100 2I`>lmF[m`0?Y=NW@O@HR2
+Z24 I;9>YC3VeSN33_2nWL7;6j3
+Z25 V6DlSDI1H?3lb8d<Gh?F3z1
+R4
+R5
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z26 n@carry_@lookahead_32bits_vlg_sample_tst
+vCarry_Lookahead_32bits_vlg_vec_tst
+!i10b 1
+!s100 H3d81JPgAIek<SY?iPJL13
+Id3fDSiAJ?o]k==oKBB;8I0
+Z27 VR<K[eiSLED4=5AK^H3;3_0
+R4
+R5
+R17
+R18
+Z28 L0 740
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z29 n@carry_@lookahead_32bits_vlg_vec_tst

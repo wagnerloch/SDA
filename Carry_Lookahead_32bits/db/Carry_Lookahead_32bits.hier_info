@@ -1,0 +1,390 @@
+|Carry_Lookahead_32bits
+A[0] => Meio_Somador:GERADOR:0:SOMADORES.A
+A[1] => Meio_Somador:GERADOR:1:SOMADORES.A
+A[2] => Meio_Somador:GERADOR:2:SOMADORES.A
+A[3] => Meio_Somador:GERADOR:3:SOMADORES.A
+A[4] => Meio_Somador:GERADOR:4:SOMADORES.A
+A[5] => Meio_Somador:GERADOR:5:SOMADORES.A
+A[6] => Meio_Somador:GERADOR:6:SOMADORES.A
+A[7] => Meio_Somador:GERADOR:7:SOMADORES.A
+A[8] => Meio_Somador:GERADOR:8:SOMADORES.A
+A[9] => Meio_Somador:GERADOR:9:SOMADORES.A
+A[10] => Meio_Somador:GERADOR:10:SOMADORES.A
+A[11] => Meio_Somador:GERADOR:11:SOMADORES.A
+A[12] => Meio_Somador:GERADOR:12:SOMADORES.A
+A[13] => Meio_Somador:GERADOR:13:SOMADORES.A
+A[14] => Meio_Somador:GERADOR:14:SOMADORES.A
+A[15] => Meio_Somador:GERADOR:15:SOMADORES.A
+A[16] => Meio_Somador:GERADOR:16:SOMADORES.A
+A[17] => Meio_Somador:GERADOR:17:SOMADORES.A
+A[18] => Meio_Somador:GERADOR:18:SOMADORES.A
+A[19] => Meio_Somador:GERADOR:19:SOMADORES.A
+A[20] => Meio_Somador:GERADOR:20:SOMADORES.A
+A[21] => Meio_Somador:GERADOR:21:SOMADORES.A
+A[22] => Meio_Somador:GERADOR:22:SOMADORES.A
+A[23] => Meio_Somador:GERADOR:23:SOMADORES.A
+A[24] => Meio_Somador:GERADOR:24:SOMADORES.A
+A[25] => Meio_Somador:GERADOR:25:SOMADORES.A
+A[26] => Meio_Somador:GERADOR:26:SOMADORES.A
+A[27] => Meio_Somador:GERADOR:27:SOMADORES.A
+A[28] => Meio_Somador:GERADOR:28:SOMADORES.A
+A[29] => Meio_Somador:GERADOR:29:SOMADORES.A
+A[30] => Meio_Somador:GERADOR:30:SOMADORES.A
+A[31] => Meio_Somador:GERADOR:31:SOMADORES.A
+B[0] => Meio_Somador:GERADOR:0:SOMADORES.B
+B[1] => Meio_Somador:GERADOR:1:SOMADORES.B
+B[2] => Meio_Somador:GERADOR:2:SOMADORES.B
+B[3] => Meio_Somador:GERADOR:3:SOMADORES.B
+B[4] => Meio_Somador:GERADOR:4:SOMADORES.B
+B[5] => Meio_Somador:GERADOR:5:SOMADORES.B
+B[6] => Meio_Somador:GERADOR:6:SOMADORES.B
+B[7] => Meio_Somador:GERADOR:7:SOMADORES.B
+B[8] => Meio_Somador:GERADOR:8:SOMADORES.B
+B[9] => Meio_Somador:GERADOR:9:SOMADORES.B
+B[10] => Meio_Somador:GERADOR:10:SOMADORES.B
+B[11] => Meio_Somador:GERADOR:11:SOMADORES.B
+B[12] => Meio_Somador:GERADOR:12:SOMADORES.B
+B[13] => Meio_Somador:GERADOR:13:SOMADORES.B
+B[14] => Meio_Somador:GERADOR:14:SOMADORES.B
+B[15] => Meio_Somador:GERADOR:15:SOMADORES.B
+B[16] => Meio_Somador:GERADOR:16:SOMADORES.B
+B[17] => Meio_Somador:GERADOR:17:SOMADORES.B
+B[18] => Meio_Somador:GERADOR:18:SOMADORES.B
+B[19] => Meio_Somador:GERADOR:19:SOMADORES.B
+B[20] => Meio_Somador:GERADOR:20:SOMADORES.B
+B[21] => Meio_Somador:GERADOR:21:SOMADORES.B
+B[22] => Meio_Somador:GERADOR:22:SOMADORES.B
+B[23] => Meio_Somador:GERADOR:23:SOMADORES.B
+B[24] => Meio_Somador:GERADOR:24:SOMADORES.B
+B[25] => Meio_Somador:GERADOR:25:SOMADORES.B
+B[26] => Meio_Somador:GERADOR:26:SOMADORES.B
+B[27] => Meio_Somador:GERADOR:27:SOMADORES.B
+B[28] => Meio_Somador:GERADOR:28:SOMADORES.B
+B[29] => Meio_Somador:GERADOR:29:SOMADORES.B
+B[30] => Meio_Somador:GERADOR:30:SOMADORES.B
+B[31] => Meio_Somador:GERADOR:31:SOMADORES.B
+Cin => C.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[8] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[9] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[10] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[11] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[12] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[13] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[14] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[15] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[16] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[17] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[18] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[19] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[20] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[21] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[22] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[23] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[24] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[25] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[26] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[27] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[28] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[29] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[30] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[31] <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:0:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:1:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:2:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:3:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:4:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:5:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:6:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:7:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:8:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:9:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:10:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:11:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:12:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:13:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:14:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:15:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:16:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:17:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:18:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:19:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:20:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:21:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:22:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:23:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:24:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:25:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:26:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:27:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:28:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:29:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:30:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Carry_Lookahead_32bits|Meio_Somador:\GERADOR:31:SOMADORES
+A => S.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
