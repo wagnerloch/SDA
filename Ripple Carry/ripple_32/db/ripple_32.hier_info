@@ -1,0 +1,548 @@
+|ripple_32
+X[0] => ripple:chamada0.X
+X[1] => ripple:G:1:chamada.X
+X[2] => ripple:G:2:chamada.X
+X[3] => ripple:G:3:chamada.X
+X[4] => ripple:G:4:chamada.X
+X[5] => ripple:G:5:chamada.X
+X[6] => ripple:G:6:chamada.X
+X[7] => ripple:G:7:chamada.X
+X[8] => ripple:G:8:chamada.X
+X[9] => ripple:G:9:chamada.X
+X[10] => ripple:G:10:chamada.X
+X[11] => ripple:G:11:chamada.X
+X[12] => ripple:G:12:chamada.X
+X[13] => ripple:G:13:chamada.X
+X[14] => ripple:G:14:chamada.X
+X[15] => ripple:G:15:chamada.X
+X[16] => ripple:G:16:chamada.X
+X[17] => ripple:G:17:chamada.X
+X[18] => ripple:G:18:chamada.X
+X[19] => ripple:G:19:chamada.X
+X[20] => ripple:G:20:chamada.X
+X[21] => ripple:G:21:chamada.X
+X[22] => ripple:G:22:chamada.X
+X[23] => ripple:G:23:chamada.X
+X[24] => ripple:G:24:chamada.X
+X[25] => ripple:G:25:chamada.X
+X[26] => ripple:G:26:chamada.X
+X[27] => ripple:G:27:chamada.X
+X[28] => ripple:G:28:chamada.X
+X[29] => ripple:G:29:chamada.X
+X[30] => ripple:G:30:chamada.X
+X[31] => ripple:chamada31.X
+Y[0] => ripple:chamada0.Y
+Y[1] => ripple:G:1:chamada.Y
+Y[2] => ripple:G:2:chamada.Y
+Y[3] => ripple:G:3:chamada.Y
+Y[4] => ripple:G:4:chamada.Y
+Y[5] => ripple:G:5:chamada.Y
+Y[6] => ripple:G:6:chamada.Y
+Y[7] => ripple:G:7:chamada.Y
+Y[8] => ripple:G:8:chamada.Y
+Y[9] => ripple:G:9:chamada.Y
+Y[10] => ripple:G:10:chamada.Y
+Y[11] => ripple:G:11:chamada.Y
+Y[12] => ripple:G:12:chamada.Y
+Y[13] => ripple:G:13:chamada.Y
+Y[14] => ripple:G:14:chamada.Y
+Y[15] => ripple:G:15:chamada.Y
+Y[16] => ripple:G:16:chamada.Y
+Y[17] => ripple:G:17:chamada.Y
+Y[18] => ripple:G:18:chamada.Y
+Y[19] => ripple:G:19:chamada.Y
+Y[20] => ripple:G:20:chamada.Y
+Y[21] => ripple:G:21:chamada.Y
+Y[22] => ripple:G:22:chamada.Y
+Y[23] => ripple:G:23:chamada.Y
+Y[24] => ripple:G:24:chamada.Y
+Y[25] => ripple:G:25:chamada.Y
+Y[26] => ripple:G:26:chamada.Y
+Y[27] => ripple:G:27:chamada.Y
+Y[28] => ripple:G:28:chamada.Y
+Y[29] => ripple:G:29:chamada.Y
+Y[30] => ripple:G:30:chamada.Y
+Y[31] => ripple:chamada31.Y
+S[0] <= ripple:chamada0.S
+S[1] <= ripple:G:1:chamada.S
+S[2] <= ripple:G:2:chamada.S
+S[3] <= ripple:G:3:chamada.S
+S[4] <= ripple:G:4:chamada.S
+S[5] <= ripple:G:5:chamada.S
+S[6] <= ripple:G:6:chamada.S
+S[7] <= ripple:G:7:chamada.S
+S[8] <= ripple:G:8:chamada.S
+S[9] <= ripple:G:9:chamada.S
+S[10] <= ripple:G:10:chamada.S
+S[11] <= ripple:G:11:chamada.S
+S[12] <= ripple:G:12:chamada.S
+S[13] <= ripple:G:13:chamada.S
+S[14] <= ripple:G:14:chamada.S
+S[15] <= ripple:G:15:chamada.S
+S[16] <= ripple:G:16:chamada.S
+S[17] <= ripple:G:17:chamada.S
+S[18] <= ripple:G:18:chamada.S
+S[19] <= ripple:G:19:chamada.S
+S[20] <= ripple:G:20:chamada.S
+S[21] <= ripple:G:21:chamada.S
+S[22] <= ripple:G:22:chamada.S
+S[23] <= ripple:G:23:chamada.S
+S[24] <= ripple:G:24:chamada.S
+S[25] <= ripple:G:25:chamada.S
+S[26] <= ripple:G:26:chamada.S
+S[27] <= ripple:G:27:chamada.S
+S[28] <= ripple:G:28:chamada.S
+S[29] <= ripple:G:29:chamada.S
+S[30] <= ripple:G:30:chamada.S
+S[31] <= ripple:chamada31.S
+COUT <= ripple:chamada31.COUT
+
+
+|ripple_32|ripple:chamada0
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:1:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:2:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:3:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:4:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:5:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:6:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:7:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:8:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:9:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:10:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:11:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:12:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:13:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:14:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:15:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:16:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:17:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:18:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:19:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:20:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:21:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:22:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:23:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:24:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:25:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:26:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:27:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:28:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:29:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:\G:30:chamada
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_32|ripple:chamada31
+Cin => S.IN1
+Cin => COUT.IN0
+Cin => COUT.IN0
+X => S.IN0
+X => COUT.IN0
+X => COUT.IN1
+Y => S.IN1
+Y => COUT.IN1
+Y => COUT.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+COUT <= COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
