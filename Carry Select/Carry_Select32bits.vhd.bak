@@ -28,9 +28,13 @@ BEGIN
 	Carry_Select_Block1: Carry_Select4bits
 			PORT MAP(a => a(3 downto 0), b => b(3 downto 0), cin => cin, saida => saida(3 downto 0),
 			cout0 => s_carry0(1), cout1 => s_carry1(1));
-	FOR i IN 2 TO 8 GENERATE
+	G1: FOR i IN 2 TO 8 GENERATE
 		Carry_Select_Block: Carry_Select4bits
-			PORT MAP(a => a((i*4)-1 downto ((i*4)-4), b => b((i*4)-1 downto ((i*4)-4), 
-			cin => s_carry0(i-1) OR (s_carry1(i-1) AND s_carry1(i-2)), cout0 => s_carry0(i), cout1 => s_carry1(i));
+			PORT MAP(a => a((i*4)-1 downto ((i*4)-4)), b => b((i*4)-1 downto ((i*4)-4)), 
+			cin => (s_carry0(i-1) OR (s_carry1(i-1) AND s_carry1(i-2))), saida => saida((i*4)-1 downto (i*4)-4),
+			cout0 => s_carry0(i), cout1 => s_carry1(i));
+	END GENERATE;
+	cout0 <= s_carry0(8);
+	cout1 <= s_carry1(8);
 
 END Arq_Carry_Select32bits;

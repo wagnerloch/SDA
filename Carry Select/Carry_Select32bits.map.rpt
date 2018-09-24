@@ -1,0 +1,436 @@
+Analysis & Synthesis report for Carry_Select32bits
+Mon Sep 24 19:54:04 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: RegN:R0
+ 10. Parameter Settings for User Entity Instance: RegN:R1
+ 11. Parameter Settings for User Entity Instance: RegN:R2
+ 12. Port Connectivity Checks: "Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder1"
+ 13. Port Connectivity Checks: "Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder0"
+ 14. Port Connectivity Checks: "RegN:R2"
+ 15. Port Connectivity Checks: "RegN:R1"
+ 16. Port Connectivity Checks: "RegN:R0"
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Sep 24 19:54:04 2018           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Carry_Select32bits                              ;
+; Top-level Entity Name              ; Carry_Select32bits                              ;
+; Family                             ; Cyclone IV GX                                   ;
+; Total logic elements               ; 170                                             ;
+;     Total combinational functions  ; 106                                             ;
+;     Dedicated logic registers      ; 96                                              ;
+; Total registers                    ; 96                                              ;
+; Total pins                         ; 100                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total GXB Receiver Channel PCS     ; 0                                               ;
+; Total GXB Receiver Channel PMA     ; 0                                               ;
+; Total GXB Transmitter Channel PCS  ; 0                                               ;
+; Total GXB Transmitter Channel PMA  ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; Carry_Select32bits ; Carry_Select32bits ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------+---------+
+; carry_select32bits.vhd           ; yes             ; Auto-Found VHDL File  ; C:/Users/Wagner/Desktop/Carry/carry_select32bits.vhd ;         ;
+; regn.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/Wagner/Desktop/Carry/regn.vhd               ;         ;
+; carry_select4bits.vhd            ; yes             ; Auto-Found VHDL File  ; C:/Users/Wagner/Desktop/Carry/carry_select4bits.vhd  ;         ;
+; adder4bits.vhd                   ; yes             ; Auto-Found VHDL File  ; C:/Users/Wagner/Desktop/Carry/adder4bits.vhd         ;         ;
+; adder1bit.vhd                    ; yes             ; Auto-Found VHDL File  ; C:/Users/Wagner/Desktop/Carry/adder1bit.vhd          ;         ;
+; mux8x4.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/Users/Wagner/Desktop/Carry/mux8x4.vhd             ;         ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 100              ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; clock~input      ;
+; Maximum fan-out          ; 96               ;
+; Total fan-out            ; 672              ;
+; Average fan-out          ; 1.67             ;
++--------------------------+------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                  ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Library Name ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
+; |Carry_Select32bits                             ; 106 (12)          ; 96 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 100  ; 0            ; |Carry_Select32bits                                                                                         ; work         ;
+;    |Carry_Select4bits:Carry_Select_Block1|      ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1                                                   ; work         ;
+;       |Adder4bits:Carry_Select_Adder0|          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder0                    ; work         ;
+;          |Adder1bit:SC1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1      ; work         ;
+;          |Adder1bit:SC2|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2      ; work         ;
+;          |Adder1bit:SC3|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3      ; work         ;
+;       |Adder4bits:Carry_Select_Adder1|          ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder1                    ; work         ;
+;          |Adder1bit:SC1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1      ; work         ;
+;          |Adder1bit:SC2|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2      ; work         ;
+;       |Mux8x4:Carry_Select_Mux|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:Carry_Select_Block1|Mux8x4:Carry_Select_Mux                           ; work         ;
+;    |Carry_Select4bits:\G1:2:Carry_Select_Block| ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block                                              ; work         ;
+;       |Adder4bits:Carry_Select_Adder0|          ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder0               ; work         ;
+;          |Adder1bit:SC1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2 ; work         ;
+;          |Adder1bit:SC3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3 ; work         ;
+;       |Adder4bits:Carry_Select_Adder1|          ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder1               ; work         ;
+;          |Adder1bit:SC1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2 ; work         ;
+;          |Adder1bit:SC3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC3 ; work         ;
+;       |Mux8x4:Carry_Select_Mux|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:2:Carry_Select_Block|Mux8x4:Carry_Select_Mux                      ; work         ;
+;    |Carry_Select4bits:\G1:3:Carry_Select_Block| ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block                                              ; work         ;
+;       |Adder4bits:Carry_Select_Adder0|          ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder0               ; work         ;
+;          |Adder1bit:SC1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2 ; work         ;
+;          |Adder1bit:SC3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3 ; work         ;
+;       |Adder4bits:Carry_Select_Adder1|          ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder1               ; work         ;
+;          |Adder1bit:SC1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2 ; work         ;
+;          |Adder1bit:SC3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC3 ; work         ;
+;       |Mux8x4:Carry_Select_Mux|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:3:Carry_Select_Block|Mux8x4:Carry_Select_Mux                      ; work         ;
+;    |Carry_Select4bits:\G1:4:Carry_Select_Block| ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block                                              ; work         ;
+;       |Adder4bits:Carry_Select_Adder0|          ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder0               ; work         ;
+;          |Adder1bit:SC1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2 ; work         ;
+;          |Adder1bit:SC3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3 ; work         ;
+;       |Adder4bits:Carry_Select_Adder1|          ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder1               ; work         ;
+;          |Adder1bit:SC1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2 ; work         ;
+;       |Mux8x4:Carry_Select_Mux|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:4:Carry_Select_Block|Mux8x4:Carry_Select_Mux                      ; work         ;
+;    |Carry_Select4bits:\G1:5:Carry_Select_Block| ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block                                              ; work         ;
+;       |Adder4bits:Carry_Select_Adder0|          ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder0               ; work         ;
+;          |Adder1bit:SC1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2 ; work         ;
+;          |Adder1bit:SC3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3 ; work         ;
+;       |Adder4bits:Carry_Select_Adder1|          ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder1               ; work         ;
+;          |Adder1bit:SC1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2 ; work         ;
+;          |Adder1bit:SC3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC3 ; work         ;
+;       |Mux8x4:Carry_Select_Mux|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:5:Carry_Select_Block|Mux8x4:Carry_Select_Mux                      ; work         ;
+;    |Carry_Select4bits:\G1:6:Carry_Select_Block| ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block                                              ; work         ;
+;       |Adder4bits:Carry_Select_Adder0|          ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder0               ; work         ;
+;          |Adder1bit:SC1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2 ; work         ;
+;          |Adder1bit:SC3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3 ; work         ;
+;       |Adder4bits:Carry_Select_Adder1|          ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder1               ; work         ;
+;          |Adder1bit:SC1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2 ; work         ;
+;       |Mux8x4:Carry_Select_Mux|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:6:Carry_Select_Block|Mux8x4:Carry_Select_Mux                      ; work         ;
+;    |Carry_Select4bits:\G1:7:Carry_Select_Block| ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block                                              ; work         ;
+;       |Adder4bits:Carry_Select_Adder0|          ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder0               ; work         ;
+;          |Adder1bit:SC1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2 ; work         ;
+;          |Adder1bit:SC3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3 ; work         ;
+;       |Adder4bits:Carry_Select_Adder1|          ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder1               ; work         ;
+;          |Adder1bit:SC1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2 ; work         ;
+;       |Mux8x4:Carry_Select_Mux|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:7:Carry_Select_Block|Mux8x4:Carry_Select_Mux                      ; work         ;
+;    |Carry_Select4bits:\G1:8:Carry_Select_Block| ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block                                              ; work         ;
+;       |Adder4bits:Carry_Select_Adder0|          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder0               ; work         ;
+;          |Adder1bit:SC1|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC2 ; work         ;
+;          |Adder1bit:SC3|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder0|Adder1bit:SC3 ; work         ;
+;       |Adder4bits:Carry_Select_Adder1|          ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder1               ; work         ;
+;          |Adder1bit:SC1|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC1 ; work         ;
+;          |Adder1bit:SC2|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC2 ; work         ;
+;          |Adder1bit:SC3|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Adder4bits:Carry_Select_Adder1|Adder1bit:SC3 ; work         ;
+;       |Mux8x4:Carry_Select_Mux|                 ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|Carry_Select4bits:\G1:8:Carry_Select_Block|Mux8x4:Carry_Select_Mux                      ; work         ;
+;    |RegN:R0|                                    ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|RegN:R0                                                                                 ; work         ;
+;    |RegN:R1|                                    ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|RegN:R1                                                                                 ; work         ;
+;    |RegN:R2|                                    ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Select32bits|RegN:R2                                                                                 ; work         ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 96    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegN:R0 ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; n              ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegN:R1 ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; n              ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegN:R2 ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; n              ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder1" ;
++------+-------+----------+------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                ;
++------+-------+----------+------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at VCC                                                           ;
++------+-------+----------+------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder0" ;
++------+-------+----------+------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                ;
++------+-------+----------+------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                           ;
++------+-------+----------+------------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "RegN:R2"      ;
++--------+-------+----------+--------------+
+; Port   ; Type  ; Severity ; Details      ;
++--------+-------+----------+--------------+
+; reset  ; Input ; Info     ; Stuck at GND ;
+; enable ; Input ; Info     ; Stuck at VCC ;
++--------+-------+----------+--------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "RegN:R1"      ;
++--------+-------+----------+--------------+
+; Port   ; Type  ; Severity ; Details      ;
++--------+-------+----------+--------------+
+; reset  ; Input ; Info     ; Stuck at GND ;
+; enable ; Input ; Info     ; Stuck at VCC ;
++--------+-------+----------+--------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "RegN:R0"      ;
++--------+-------+----------+--------------+
+; Port   ; Type  ; Severity ; Details      ;
++--------+-------+----------+--------------+
+; reset  ; Input ; Info     ; Stuck at GND ;
+; enable ; Input ; Info     ; Stuck at VCC ;
++--------+-------+----------+--------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Sep 24 19:54:02 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Carry_Select32bits -c Carry_Select32bits
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (12125): Using design file carry_select32bits.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Carry_Select32bits-Arq_Carry_Select32bits
+    Info (12023): Found entity 1: Carry_Select32bits
+Info (12127): Elaborating entity "Carry_Select32bits" for the top level hierarchy
+Warning (10873): Using initial value X (don't care) for net "s_carry1[0]" at carry_select32bits.vhd(16)
+Warning (12125): Using design file regn.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: RegN-comportamento
+    Info (12023): Found entity 1: RegN
+Info (12128): Elaborating entity "RegN" for hierarchy "RegN:R0"
+Warning (12125): Using design file carry_select4bits.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Carry_Select4bits-Arq_Carry_Select4bits
+    Info (12023): Found entity 1: Carry_Select4bits
+Info (12128): Elaborating entity "Carry_Select4bits" for hierarchy "Carry_Select4bits:Carry_Select_Block1"
+Warning (12125): Using design file adder4bits.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Adder4bits-Arq_Adder4bits
+    Info (12023): Found entity 1: Adder4bits
+Info (12128): Elaborating entity "Adder4bits" for hierarchy "Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder0"
+Warning (12125): Using design file adder1bit.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Adder1bit-Arq_Adder1bit
+    Info (12023): Found entity 1: Adder1bit
+Info (12128): Elaborating entity "Adder1bit" for hierarchy "Carry_Select4bits:Carry_Select_Block1|Adder4bits:Carry_Select_Adder0|Adder1bit:SC0"
+Warning (12125): Using design file mux8x4.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Mux8x4-Arq_Mux8x4
+    Info (12023): Found entity 1: Mux8x4
+Info (12128): Elaborating entity "Mux8x4" for hierarchy "Carry_Select4bits:Carry_Select_Block1|Mux8x4:Carry_Select_Mux"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 270 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 66 input pins
+    Info (21059): Implemented 34 output pins
+    Info (21061): Implemented 170 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4697 megabytes
+    Info: Processing ended: Mon Sep 24 19:54:05 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+
