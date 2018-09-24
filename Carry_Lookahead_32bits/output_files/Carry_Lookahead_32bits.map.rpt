@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Carry_Lookahead_32bits
-Thu Sep 20 15:52:43 2018
+Mon Sep 24 19:31:03 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,8 +14,14 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: RegN:R0
+ 10. Parameter Settings for User Entity Instance: RegN:R1
+ 11. Parameter Settings for User Entity Instance: RegN:R2
+ 12. Port Connectivity Checks: "RegN:R2"
+ 13. Port Connectivity Checks: "RegN:R1"
+ 14. Port Connectivity Checks: "RegN:R0"
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -41,19 +47,23 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 20 15:52:43 2018           ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 24 19:31:03 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Carry_Lookahead_32bits                          ;
 ; Top-level Entity Name              ; Carry_Lookahead_32bits                          ;
-; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 82                                              ;
-;     Total combinational functions  ; 82                                              ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 98                                              ;
+; Family                             ; Cyclone IV GX                                   ;
+; Total logic elements               ; 145                                             ;
+;     Total combinational functions  ; 81                                              ;
+;     Dedicated logic registers      ; 96                                              ;
+; Total registers                    ; 96                                              ;
+; Total pins                         ; 99                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total GXB Receiver Channel PCS     ; 0                                               ;
+; Total GXB Receiver Channel PMA     ; 0                                               ;
+; Total GXB Transmitter Channel PCS  ; 0                                               ;
+; Total GXB Transmitter Channel PMA  ; 0                                               ;
 ; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
@@ -64,7 +74,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting                ; Default Value          ;
 +----------------------------------------------------------------------------+------------------------+------------------------+
 ; Top-level entity name                                                      ; Carry_Lookahead_32bits ; Carry_Lookahead_32bits ;
-; Family name                                                                ; Cyclone II             ; Cyclone IV GX          ;
+; Family name                                                                ; Cyclone IV GX          ; Cyclone IV GX          ;
 ; Use smart compilation                                                      ; Off                    ; Off                    ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                     ; On                     ;
 ; Enable compact report table                                                ; Off                    ; Off                    ;
@@ -103,12 +113,14 @@ applicable agreement for further details.
 ; Perform WYSIWYG Primitive Resynthesis                                      ; Off                    ; Off                    ;
 ; Auto ROM Replacement                                                       ; On                     ; On                     ;
 ; Auto RAM Replacement                                                       ; On                     ; On                     ;
+; Auto DSP Block Replacement                                                 ; On                     ; On                     ;
 ; Auto Shift Register Replacement                                            ; Auto                   ; Auto                   ;
 ; Allow Shift Register Merging across Hierarchies                            ; Auto                   ; Auto                   ;
 ; Auto Clock Enable Replacement                                              ; On                     ; On                     ;
 ; Strict RAM Replacement                                                     ; Off                    ; Off                    ;
 ; Allow Synchronous Control Signals                                          ; On                     ; On                     ;
 ; Force Use of Synchronous Clear Signals                                     ; Off                    ; Off                    ;
+; Auto RAM Block Balancing                                                   ; On                     ; On                     ;
 ; Auto RAM to Logic Cell Conversion                                          ; Off                    ; Off                    ;
 ; Auto Resource Sharing                                                      ; Off                    ; Off                    ;
 ; Allow Any RAM Size For Recognition                                         ; Off                    ; Off                    ;
@@ -116,7 +128,7 @@ applicable agreement for further details.
 ; Allow Any Shift Register Size For Recognition                              ; Off                    ; Off                    ;
 ; Use LogicLock Constraints during Resource Balancing                        ; On                     ; On                     ;
 ; Ignore translate_off and synthesis_off directives                          ; Off                    ; Off                    ;
-; Timing-Driven Synthesis                                                    ; Off                    ; Off                    ;
+; Timing-Driven Synthesis                                                    ; On                     ; On                     ;
 ; Report Parameter Settings                                                  ; On                     ; On                     ;
 ; Report Source Assignments                                                  ; On                     ; On                     ;
 ; Report Connectivity Checks                                                 ; On                     ; On                     ;
@@ -158,48 +170,36 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                              ; Library ;
 +----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------+---------+
-; Carry_Lookahead_32bits.vhd       ; yes             ; User VHDL File        ; C:/Users/Wagner/Desktop/Carry_Lookahead_32bits/Carry_Lookahead_32bits.vhd ;         ;
+; carry_lookahead_32bits.vhd       ; yes             ; Auto-Found VHDL File  ; C:/Users/Wagner/Desktop/Carry_Lookahead_32bits/carry_lookahead_32bits.vhd ;         ;
+; regn.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/Wagner/Desktop/Carry_Lookahead_32bits/regn.vhd                   ;         ;
 ; meio_somador.vhd                 ; yes             ; Auto-Found VHDL File  ; C:/Users/Wagner/Desktop/Carry_Lookahead_32bits/meio_somador.vhd           ;         ;
 +----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+---------------------------------------------+---------+
-; Resource                                    ; Usage   ;
-+---------------------------------------------+---------+
-; Estimated Total logic elements              ; 82      ;
-;                                             ;         ;
-; Total combinational functions               ; 82      ;
-; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 34      ;
-;     -- 3 input functions                    ; 33      ;
-;     -- <=2 input functions                  ; 15      ;
-;                                             ;         ;
-; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 82      ;
-;     -- arithmetic mode                      ; 0       ;
-;                                             ;         ;
-; Total registers                             ; 0       ;
-;     -- Dedicated logic registers            ; 0       ;
-;     -- I/O registers                        ; 0       ;
-;                                             ;         ;
-; I/O pins                                    ; 98      ;
-; Embedded Multiplier 9-bit elements          ; 0       ;
-; Maximum fan-out node                        ; C[2]~10 ;
-; Maximum fan-out                             ; 4       ;
-; Total fan-out                               ; 298     ;
-; Average fan-out                             ; 1.66    ;
-+---------------------------------------------+---------+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 99               ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; clock~input      ;
+; Maximum fan-out          ; 96               ;
+; Total fan-out            ; 584              ;
+; Average fan-out          ; 1.56             ;
++--------------------------+------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                             ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name     ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
-; |Carry_Lookahead_32bits    ; 82 (82)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 98   ; 0            ; |Carry_Lookahead_32bits ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                 ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------+--------------+
+; |Carry_Lookahead_32bits    ; 81 (81)           ; 96 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 99   ; 0            ; |Carry_Lookahead_32bits         ; work         ;
+;    |RegN:R0|               ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Lookahead_32bits|RegN:R0 ; work         ;
+;    |RegN:R1|               ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Lookahead_32bits|RegN:R1 ; work         ;
+;    |RegN:R2|               ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Carry_Lookahead_32bits|RegN:R2 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -208,7 +208,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 96    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -216,6 +216,66 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegN:R0 ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; n              ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegN:R1 ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; n              ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RegN:R2 ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; n              ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------+
+; Port Connectivity Checks: "RegN:R2"      ;
++--------+-------+----------+--------------+
+; Port   ; Type  ; Severity ; Details      ;
++--------+-------+----------+--------------+
+; reset  ; Input ; Info     ; Stuck at GND ;
+; enable ; Input ; Info     ; Stuck at VCC ;
++--------+-------+----------+--------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "RegN:R1"      ;
++--------+-------+----------+--------------+
+; Port   ; Type  ; Severity ; Details      ;
++--------+-------+----------+--------------+
+; reset  ; Input ; Info     ; Stuck at GND ;
+; enable ; Input ; Info     ; Stuck at VCC ;
++--------+-------+----------+--------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "RegN:R0"      ;
++--------+-------+----------+--------------+
+; Port   ; Type  ; Severity ; Details      ;
++--------+-------+----------+--------------+
+; reset  ; Input ; Info     ; Stuck at GND ;
+; enable ; Input ; Info     ; Stuck at VCC ;
++--------+-------+----------+--------------+
 
 
 +-------------------------------+
@@ -233,38 +293,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Sep 20 15:52:41 2018
+    Info: Processing started: Mon Sep 24 19:31:00 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Carry_Lookahead_32bits -c Carry_Lookahead_32bits
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file carry_lookahead_32bits.vhd
+Warning (12125): Using design file carry_lookahead_32bits.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: Carry_Lookahead_32bits-comportamento
     Info (12023): Found entity 1: Carry_Lookahead_32bits
 Info (12127): Elaborating entity "Carry_Lookahead_32bits" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at Carry_Lookahead_32bits.vhd(40): signal "SG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Carry_Lookahead_32bits.vhd(40): signal "SP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Carry_Lookahead_32bits.vhd(42): signal "SG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Carry_Lookahead_32bits.vhd(42): signal "SP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Carry_Lookahead_32bits.vhd(42): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Carry_Lookahead_32bits.vhd(44): signal "SG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Carry_Lookahead_32bits.vhd(44): signal "SP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Carry_Lookahead_32bits.vhd(44): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Carry_Lookahead_32bits.vhd(49): signal "SP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Carry_Lookahead_32bits.vhd(51): signal "SP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Carry_Lookahead_32bits.vhd(51): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at carry_lookahead_32bits.vhd(84): signal "SG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at carry_lookahead_32bits.vhd(84): signal "SP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at carry_lookahead_32bits.vhd(86): signal "SG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at carry_lookahead_32bits.vhd(86): signal "SP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at carry_lookahead_32bits.vhd(86): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at carry_lookahead_32bits.vhd(88): signal "SG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at carry_lookahead_32bits.vhd(88): signal "SP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at carry_lookahead_32bits.vhd(88): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at carry_lookahead_32bits.vhd(93): signal "SP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at carry_lookahead_32bits.vhd(95): signal "SP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at carry_lookahead_32bits.vhd(95): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (12125): Using design file regn.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: RegN-comportamento
+    Info (12023): Found entity 1: RegN
+Info (12128): Elaborating entity "RegN" for hierarchy "RegN:R0"
 Warning (12125): Using design file meio_somador.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: Meio_Somador-comportamento
     Info (12023): Found entity 1: Meio_Somador
 Info (12128): Elaborating entity "Meio_Somador" for hierarchy "Meio_Somador:\GERADOR:0:SOMADORES"
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 180 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 65 input pins
+Info (21057): Implemented 244 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 66 input pins
     Info (21059): Implemented 33 output pins
-    Info (21061): Implemented 82 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4651 megabytes
-    Info: Processing ended: Thu Sep 20 15:52:43 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info (21061): Implemented 145 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4694 megabytes
+    Info: Processing ended: Mon Sep 24 19:31:04 2018
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
 
 
