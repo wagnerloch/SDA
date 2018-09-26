@@ -1,0 +1,37 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
+
+
+ENTITY mem IS
+	GENERIC (	wlength: integer := 32;
+				words : integer := 10);
+	PORT(
+	DataIn: IN std_logic_vector(wlength - 1 DOWNTO 0);
+	Addr_in: IN std_logic_vector(words - 1 DOWNTO 0);
+	Addr_out: IN std_logic_vector(words - 1 DOWNTO 0);
+	clock, WE: IN std_logic;
+	DataOut: OUT std_logic_vector(wlength - 1 DOWNTO 0));
+END mem;
+
+ARCHITECTURE behavior OF mem IS
+
+type memory_type is array (2**words -1 downto 0) of STD_LOGIC_VECTOR(wlength -1 downto 0);
+signal memory:memory_type;
+signal sw : std_logic := '0';
+signal Data: STD_LOGIC_VECTOR(wlength -1 downto 0);
+
+begin
+	sw <= '1';
+	DataIn <= Data;
+	process(clock, addr_out, WE)
+	begin
+		if clock'event AND clock = '1' THEN
+			if WE = '1' THEN
+				memory(conv_integer(addr_in(words - 1 DOWNTO 0))) <= Data(wlength -1 DOWNTO 0);
+			end if;
+			DataOut <= memory(conv_integer(addr_out(words - 1 DOWNTO 0))) after 1ns;
+		end if;
+	end process;
+end behavior;
